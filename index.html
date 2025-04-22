@@ -4,13 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snake Game</title>
-
     <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <canvas class="canvas" height="500px" width="500px"></canvas>
-    
+    <script src="https://cdn.tailwindcss.com"></script>
 
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-slate-800 flex flex-col items-center justify-center min-h-screen text-white font-mono relative overflow-hidden">
+
+    <h1 class="text-4xl mb-4">🐍 Snake Game</h1>
+  
+    <canvas class="canvas border-4 border-white shadow-2xl rounded-lg" width="400" height="400"></canvas>
+  
+    <button id="playBtn" class="mt-6 px-6 py-2 text-lg bg-green-500 hover:bg-green-600 rounded-lg shadow-md transition-all">
+      ▶️ Play Game
+    </button>
+  
+    <!-- Mobile Controls -->
+    <div class=" bottom-10 flex flex-col items-center space-y-2">
+      <button id="btnUp" class="bg-white text-black font-bold px-4 py-2 rounded shadow">⬆️</button>
+      <div class="flex space-x-4">
+        <button id="btnLeft" class="bg-white text-black font-bold px-4 py-2 rounded shadow">⬅️</button>
+        <button id="btnDown" class="bg-white text-black font-bold px-4 py-2 rounded shadow">⬇️</button>
+        <button id="btnRight" class="bg-white text-black font-bold px-4 py-2 rounded shadow">➡️</button>
+      </div>
+    </div>
+  
     <script src="js/script.js"></script>
 </body>
 </html>
